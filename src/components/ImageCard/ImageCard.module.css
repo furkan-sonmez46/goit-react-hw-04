@@ -1,0 +1,18 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
