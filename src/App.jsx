@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import SearchBar from './components/SearchBar/SearchBar';
 import ImageGallery from './components/ImageGallery/ImageGallery';
@@ -62,7 +62,7 @@ function App() {
     }
   };
 
-  const handleImageClick = (image) => {
+  const handleImageClick = image => {
     setModalImage(image); // Pass the entire image object
     setIsModalOpen(true);
   };
@@ -77,13 +77,13 @@ function App() {
       <SearchBar onSubmit={handleSearch} />
       {error && <ErrorMessage message={error} />}
       <ImageGallery
-        images={images.map((image) => ({
+        images={images.map(image => ({
           id: image.id,
           small: image.urls.small,
           regular: image.urls.regular,
           alt: image.alt_description,
         }))}
-        onImageClick={(image) => handleImageClick(image)} // Pass the entire image object
+        onImageClick={image => handleImageClick(image)} // Pass the entire image object
       />
       {loading && <Loader />} {/* Loader is rendered below the gallery */}
       {images.length > 0 && (
