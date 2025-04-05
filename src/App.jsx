@@ -8,8 +8,8 @@ import ErrorMessage from './components/ErrorMessage/ErrorMessage';
 import ImageModal from './components/ImageModal/ImageModal';
 import './App.css';
 
-const UNSPLASH_API_URL = 'https://api.unsplash.com/search/photos';
-const ACCESS_KEY = 'YOUR_UNSPLASH_ACCESS_KEY'; // Replace with your Unsplash Access Key
+const UNSPLASH_API_URL = `https://api.unsplash.com/search/photos?client_id=${ACCESS_KEY}`;
+const ACCESS_KEY = 'lp35FnQim4EKaWxMcVIXND_uRz3tnzejIWTbXtCe7lc'; // Replace with your Unsplash Access Key
 
 function App() {
   const [images, setImages] = useState([]);
