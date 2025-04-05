@@ -15,7 +15,7 @@ const ImageModal = ({ image, isOpen, onClose }) => {
       shouldCloseOnEsc={true}
     >
       <div className={styles.content}>
-        <img src={image} alt="Large view" />
+        {image && <img src={image.regular} alt={image.alt} />} {/* Display large version */}
         <button onClick={onClose} className={styles.closeButton}>
           Close
         </button>

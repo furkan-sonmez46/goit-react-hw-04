@@ -1,18 +1,22 @@
 .card {
+  width: 250px; /* Fixed width for equal size */
+  height: 250px; /* Fixed height for equal size */
   border: 1px solid #ccc;
   border-radius: 0.25rem;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the card without distortion */
   display: block;
 }

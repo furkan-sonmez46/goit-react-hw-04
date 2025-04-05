@@ -8,8 +8,8 @@ import ErrorMessage from './components/ErrorMessage/ErrorMessage';
 import ImageModal from './components/ImageModal/ImageModal';
 import './App.css';
 
-const UNSPLASH_API_URL = `https://api.unsplash.com/search/photos?client_id=${ACCESS_KEY}`;
 const ACCESS_KEY = 'lp35FnQim4EKaWxMcVIXND_uRz3tnzejIWTbXtCe7lc'; // Replace with your Unsplash Access Key
+const UNSPLASH_API_URL = 'https://api.unsplash.com/search/photos';
 
 function App() {
   const [images, setImages] = useState([]);
@@ -62,8 +62,8 @@ function App() {
     }
   };
 
-  const handleImageClick = imageUrl => {
-    setModalImage(imageUrl);
+  const handleImageClick = (image) => {
+    setModalImage(image); // Pass the entire image object
     setIsModalOpen(true);
   };
 
@@ -72,27 +72,25 @@ function App() {
     setIsModalOpen(false);
   };
 
-  // Removed duplicate handleLoadMore function
-
   return (
     <>
       <SearchBar onSubmit={handleSearch} />
       {error && <ErrorMessage message={error} />}
       <ImageGallery
-        images={images.map(image => ({
+        images={images.map((image) => ({
           id: image.id,
           small: image.urls.small,
           regular: image.urls.regular,
           alt: image.alt_description,
         }))}
-        onImageClick={imageUrl => handleImageClick(imageUrl)}
+        onImageClick={(image) => handleImageClick(image)} // Pass the entire image object
       />
       {loading && <Loader />} {/* Loader is rendered below the gallery */}
       {images.length > 0 && (
         <LoadMoreBtn onLoadMore={handleLoadMore} images={images} />
       )}
       <ImageModal
-        image={modalImage}
+        image={modalImage} // Pass the entire image object
         isOpen={isModalOpen}
         onClose={handleCloseModal}
       />

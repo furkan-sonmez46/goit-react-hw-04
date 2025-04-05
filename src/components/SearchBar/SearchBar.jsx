@@ -5,11 +5,11 @@ import styles from './SearchBar.module.css';
 const SearchBar = ({ onSubmit }) => {
   const [query, setQuery] = useState('');
 
-  const handleInputChange = e => {
+  const handleInputChange = (e) => {
     setQuery(e.target.value);
   };
 
-  const handleFormSubmit = e => {
+  const handleFormSubmit = (e) => {
     e.preventDefault();
     if (query.trim() === '') {
       toast.error('Please enter text to search for an image.');

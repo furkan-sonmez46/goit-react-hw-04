@@ -1,16 +1,17 @@
 .button {
   display: block;
-  margin: 1rem auto;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
+  margin: 2rem auto; /* Center the button */
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
   background-color: #0078d4;
   color: white;
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .button:hover {
   background-color: #005a9e;
+  transform: scale(1.05); /* Subtle hover effect */
 }
