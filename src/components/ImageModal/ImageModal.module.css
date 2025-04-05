@@ -20,10 +20,6 @@
   overflow: hidden; /* Ensure no scrollbars appear */
 }
 
-.content {
-  max-width: 90%;
-  max-height: 90%;
-}
 
 .content img {
   width: 100%;
@@ -32,23 +28,7 @@
   border-radius: 0; /* Remove rounded corners */
 }
 
+/* Remove the close button styles */
 .closeButton {
-  position: absolute;
-  top: 0.5rem; /* Adjusted position for better usability */
-  right: 0.5rem;
-  background: transparent;
-  color: black;
-  border: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none; /* Remove focus outline */
-}
-
-.closeButton:hover {
-  color: red;
-}
-
-.closeButton:focus {
-  outline: none; /* Ensure no border is visible when focusing */
+  display: none; /* Hide the close button */
 }

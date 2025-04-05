@@ -16,9 +16,6 @@ const ImageModal = ({ image, isOpen, onClose }) => {
     >
       <div className={styles.content}>
         {image && <img src={image.regular} alt={image.alt} />}
-        <button onClick={onClose} className={styles.closeButton}>
-          &times; {/* Use "X" symbol */}
-        </button>
       </div>
     </ReactModal>
   );
