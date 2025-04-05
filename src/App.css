@@ -43,10 +43,7 @@
 
 @media (max-width: 768px) {
   .gallery {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(150px, 1fr)
-    ); /* Adjust grid for smaller screens */
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
   }
 
   .header {
@@ -69,10 +66,7 @@
 
 @media (max-width: 480px) {
   .gallery {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(120px, 1fr)
-    ); /* Further adjust grid for very small screens */
+    grid-template-columns: repeat(1, 1fr); /* One column for very small screens */
   }
 
   .input {
