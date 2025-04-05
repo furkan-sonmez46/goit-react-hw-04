@@ -4,29 +4,30 @@
   left: 0;
   width: 100%; /* Full width */
   background-color: #0078d4;
-  padding: 1rem; /* Reduced padding for smaller height */
+  padding: 0.3rem; /* Further reduced padding for smaller height */
   z-index: 1000; /* Ensure it stays above other elements */
 }
 
 .form {
   display: flex;
-  gap: 1rem;
+  gap: 0.3rem; /* Reduced gap for tighter layout */
   justify-content: center;
   margin: 0 auto;
   max-width: 800px; /* Limit form width */
+  align-items: center; /* Align items vertically */
 }
 
 .input {
-  padding: 0.5rem; /* Reduced padding for smaller height */
-  font-size: 1rem;
+  padding: 0.3rem; /* Further reduced padding for smaller height */
+  font-size: 0.8rem; /* Smaller text */
   border: 1px solid #ccc;
   border-radius: 0.25rem;
   width: 100%;
 }
 
 .button {
-  padding: 0.5rem 1rem; /* Reduced padding for smaller height */
-  font-size: 1rem;
+  padding: 0.3rem 0.8rem; /* Further reduced padding for smaller height */
+  font-size: 0.8rem; /* Smaller text */
   background-color: #005a9e;
   color: white;
   border: none;

@@ -42,7 +42,7 @@
 }
 
 .gallery {
-  margin-bottom: 2rem; /* Add spacing below the gallery */
+  margin-bottom: 1rem; /* Reduced spacing below the gallery */
 }
 
 @media (max-width: 768px) {
@@ -51,7 +51,7 @@
   }
 
   .header {
-    padding: 0.5rem;
+    padding: 0.3rem;
   }
 
   .form {
@@ -59,29 +59,26 @@
   }
 
   .input {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .button {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
   }
 }
 
 @media (max-width: 480px) {
   .gallery {
-    grid-template-columns: repeat(
-      1,
-      1fr
-    ); /* One column for very small screens */
+    grid-template-columns: repeat(1, 1fr); /* One column for very small screens */
   }
 
   .input {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .button {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
+    font-size: 0.6rem;
+    padding: 0.2rem 0.5rem;
   }
 }

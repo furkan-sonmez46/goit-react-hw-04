@@ -1,8 +1,8 @@
 .button {
   display: block;
-  margin: 2rem auto; /* Center the button and add spacing */
-  padding: 1rem 2rem;
-  font-size: 1.25rem;
+  margin: 1rem auto; /* Center the button and reduce spacing */
+  padding: 0.6rem 1.2rem; /* Adjust padding */
+  font-size: 0.9rem; /* Adjust font size */
   background-color: #0078d4;
   color: white;
   border: none;

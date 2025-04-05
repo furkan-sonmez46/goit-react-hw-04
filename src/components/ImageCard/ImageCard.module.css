@@ -1,6 +1,6 @@
 .card {
   width: 100%; /* Make the card take full width of its container */
-  height: 200px; /* Adjust height for rectangular images */
+  height: 180px; /* Adjust height for rectangular images */
   border: 1px solid #ccc;
   border-radius: 0.25rem;
   overflow: hidden;
