@@ -43,7 +43,7 @@
 }
 
 .gallery {
-  margin-bottom: 0; /* Remove spacing below the gallery */
+  margin-bottom: 1rem; /* Add spacing below the gallery */
   padding: 0; /* Remove padding */
 }
 

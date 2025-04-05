@@ -17,12 +17,11 @@
 }
 
 .button-container {
-  position: fixed; /* Fix the button at the bottom of the page */
-  bottom: 0;
-  left: 0;
+  position: static; /* Remove fixed positioning */
+  margin-top: 1rem; /* Add spacing above the button */
+  text-align: center;
   width: 100%; /* Full width */
   background-color: #f9f9f9; /* Background to distinguish the button area */
   padding: 0.5rem 0;
-  text-align: center;
   z-index: 1000; /* Ensure it stays above other elements */
 }

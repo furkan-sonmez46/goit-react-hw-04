@@ -6,6 +6,7 @@
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   background-color: transparent; /* Remove background color */
+  border-radius: 0; /* Remove border radius */
 }
 
 .card:hover {

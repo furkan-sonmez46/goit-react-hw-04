@@ -6,6 +6,7 @@
   list-style: none;
   margin: 0; /* Remove margins */
   width: 100%; /* Full width */
+  margin-top: 0.5rem; /* Match spacing with the search bar */
 }
 
 .item {

@@ -13,12 +13,11 @@
 
 .modal {
   position: relative;
-  background: white;
-  border-radius: 0.5rem;
-  padding: 1rem;
+  background: transparent; /* Remove white background */
+  padding: 0; /* Remove padding */
   max-width: 90%;
   max-height: 90%;
-  overflow: auto;
+  overflow: hidden; /* Ensure no scrollbars appear */
 }
 
 .content {
@@ -29,6 +28,7 @@
 .content img {
   width: 100%;
   height: auto;
+  display: block;
   border-radius: 0.5rem;
 }
 
