@@ -4,7 +4,7 @@
   left: 0;
   width: 100%; /* Full width */
   background-color: #0078d4;
-  padding: 1rem;
+  padding: 1.5rem; /* Match spacing with the gallery */
   z-index: 1000; /* Ensure it stays above other elements */
 }
 

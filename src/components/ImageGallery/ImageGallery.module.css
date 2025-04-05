@@ -1,12 +1,11 @@
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted for rectangular images */
-  gap: 1rem; /* Reduced gap for closer images */
-  padding: 1rem;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 1.5rem; /* Space between images */
+  padding: 1.5rem; /* Match spacing with the search bar */
   list-style: none;
   margin: 0 auto;
   max-width: 1200px; /* Limit gallery width */
-  height: auto; /* Ensure no scrolling */
 }
 
 .item {

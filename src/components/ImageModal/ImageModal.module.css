@@ -42,8 +42,13 @@
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
+  outline: none; /* Remove focus outline */
 }
 
 .closeButton:hover {
   color: red;
+}
+
+.closeButton:focus {
+  outline: none; /* Ensure no border is visible when focusing */
 }
