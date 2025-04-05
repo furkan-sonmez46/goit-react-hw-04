@@ -41,6 +41,10 @@
   color: #888;
 }
 
+.gallery {
+  margin-bottom: 2rem; /* Add spacing below the gallery */
+}
+
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */

@@ -4,7 +4,7 @@
   left: 0;
   width: 100%; /* Full width */
   background-color: #0078d4;
-  padding: 1.5rem; /* Match spacing with the gallery */
+  padding: 1rem; /* Reduced padding for smaller height */
   z-index: 1000; /* Ensure it stays above other elements */
 }
 
@@ -17,7 +17,7 @@
 }
 
 .input {
-  padding: 0.75rem;
+  padding: 0.5rem; /* Reduced padding for smaller height */
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
@@ -25,7 +25,7 @@
 }
 
 .button {
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem; /* Reduced padding for smaller height */
   font-size: 1rem;
   background-color: #005a9e;
   color: white;
