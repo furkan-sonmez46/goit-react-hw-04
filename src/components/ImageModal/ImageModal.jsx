@@ -15,9 +15,9 @@ const ImageModal = ({ image, isOpen, onClose }) => {
       shouldCloseOnEsc={true}
     >
       <div className={styles.content}>
-        {image && <img src={image.regular} alt={image.alt} />} {/* Display large version */}
+        {image && <img src={image.regular} alt={image.alt} />}
         <button onClick={onClose} className={styles.closeButton}>
-          Close
+          &times; {/* Use "X" symbol */}
         </button>
       </div>
     </ReactModal>

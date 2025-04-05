@@ -40,3 +40,41 @@
 .read-the-docs {
   color: #888;
 }
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+  }
+
+  .header {
+    padding: 0.5rem;
+  }
+
+  .form {
+    max-width: 100%; /* Allow form to take full width on smaller screens */
+  }
+
+  .input {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Further adjust grid for very small screens */
+  }
+
+  .input {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

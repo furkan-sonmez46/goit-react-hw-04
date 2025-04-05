@@ -1,11 +1,12 @@
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted for rectangular images */
+  gap: 1rem; /* Reduced gap for closer images */
+  padding: 1rem;
   list-style: none;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1200px; /* Limit gallery width */
+  height: auto; /* Ensure no scrolling */
 }
 
 .item {
