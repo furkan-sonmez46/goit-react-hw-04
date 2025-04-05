@@ -1,8 +1,8 @@
 .button {
   display: block;
-  margin: 1rem auto; /* Center the button and reduce spacing */
-  padding: 0.6rem 1.2rem; /* Adjust padding */
-  font-size: 0.9rem; /* Adjust font size */
+  margin: 2rem auto; /* Center the button */
+  padding: 0.8rem 1.5rem; /* Adjust padding */
+  font-size: 1rem; /* Adjust font size */
   background-color: #0078d4;
   color: white;
   border: none;
@@ -14,4 +14,15 @@
 .button:hover {
   background-color: #005a9e;
   transform: scale(1.05); /* Subtle hover effect */
+}
+
+.button-container {
+  position: fixed; /* Fix the button at the bottom of the page */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: #f9f9f9; /* Background to distinguish the button area */
+  padding: 0.5rem 0;
+  text-align: center;
+  z-index: 1000; /* Ensure it stays above other elements */
 }

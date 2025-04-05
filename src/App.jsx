@@ -87,7 +87,9 @@ function App() {
       />
       {loading && <Loader />} {/* Loader is rendered below the gallery */}
       {images.length > 0 && (
-        <LoadMoreBtn onLoadMore={handleLoadMore} images={images} />
+        <div className="button-container">
+          <LoadMoreBtn onLoadMore={handleLoadMore} images={images} />
+        </div>
       )}
       <ImageModal
         image={modalImage} // Pass the entire image object

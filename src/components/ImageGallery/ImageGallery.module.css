@@ -1,10 +1,10 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Four columns */
-  gap: 0.2rem; /* Reduced gap for minimal spacing */
-  padding: 0.2rem; /* Reduced padding */
+  gap: 0.5rem; /* Add consistent spacing between images */
+  padding: 0; /* Remove padding */
   list-style: none;
-  margin: 3rem auto; /* Add space below the search bar */
+  margin: 0; /* Remove margins */
   width: 100%; /* Full width */
 }
 

@@ -1,12 +1,11 @@
 .card {
-  width: 100%; /* Make the card take full width of its container */
-  height: 180px; /* Adjust height for rectangular images */
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
+  width: 100%; /* Full width of the container */
+  height: 250px; /* Adjust height for rectangular images */
+  border: none; /* Remove border */
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
-  background-color: #fff;
+  background-color: transparent; /* Remove background color */
 }
 
 .card:hover {

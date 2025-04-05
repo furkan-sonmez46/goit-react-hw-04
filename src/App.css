@@ -1,8 +1,9 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100%; /* Full width */
+  margin: 0;
+  padding: 0;
   text-align: center;
+  background-color: transparent; /* Remove white background */
 }
 
 .logo {
@@ -42,7 +43,8 @@
 }
 
 .gallery {
-  margin-bottom: 1rem; /* Reduced spacing below the gallery */
+  margin-bottom: 0; /* Remove spacing below the gallery */
+  padding: 0; /* Remove padding */
 }
 
 @media (max-width: 768px) {
@@ -51,7 +53,7 @@
   }
 
   .header {
-    padding: 0.3rem;
+    padding: 0.5rem;
   }
 
   .form {
@@ -59,12 +61,12 @@
   }
 
   .input {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .button {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
   }
 }
 
@@ -74,11 +76,11 @@
   }
 
   .input {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   .button {
-    font-size: 0.6rem;
-    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
   }
 }
