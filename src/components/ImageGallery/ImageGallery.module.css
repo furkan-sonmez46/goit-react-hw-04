@@ -6,7 +6,7 @@
   list-style: none;
   margin: 0 auto; /* Center the gallery */
   width: calc(100% - 1rem); /* Full width minus the padding */
-  margin-top: 0.5rem; /* Match spacing with the search bar */
+  margin-top: 3.5rem; /* Match spacing with the search bar */
 }
 
 .item {
