@@ -70,7 +70,10 @@
 
 @media (max-width: 480px) {
   .gallery {
-    grid-template-columns: repeat(1, 1fr); /* One column for very small screens */
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* One column for very small screens */
   }
 
   .input {
